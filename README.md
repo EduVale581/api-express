@@ -22,7 +22,7 @@ Una API REST de usuarios con autenticación JWT. El cliente se comunica con el s
 ### Estructura de carpetas
 
 ```
-mi-api/
+api/
 ├── src/
 │   ├── config/
 │   │   └── db.js          # Conexión a BD
@@ -53,17 +53,17 @@ mi-api/
 ### Inicializar el proyecto
 
 ```bash
-mkdir mi-api
-cd mi-api
-npm init -y
+mkdir api
+cd api
+pnpm init -y
 ```
 
-> `npm init -y` crea el archivo `package.json` que registra todas las dependencias.
+> `pnpm init -y` crea el archivo `package.json` que registra todas las dependencias.
 
 ### Instalar dependencias
 
 ```bash
-npm install express jsonwebtoken bcryptjs dotenv better-sqlite3
+pnpm add express jsonwebtoken bcryptjs dotenv better-sqlite3
 ```
 
 ### Crear el archivo `.env`
